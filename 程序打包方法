@@ -1,0 +1,3 @@
+.py打包为exe方法：
+
+cmd中输入pyinstaller  文件路径 --onefile   # 安装pip install pyinstaller
