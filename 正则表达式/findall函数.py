@@ -1,8 +1,4 @@
-
-
 import re
-
-
 
 re.findall(pattern='',string='')
 # pattern表达式表明需要的字符,string用于匹配的字符

@@ -6,6 +6,7 @@ key关键词、value值
 dic = {"name": "绝迹的星", "age": 20}  # {key:value}
 # 空字典
 d = {}
+d = dict({"name": "绝迹的星", "age": 20})
 # -----------------------------------------------------------------------
 # 获取字典元素
 print(dic["name"])  # 如果name不存在会报错KeyError
@@ -66,4 +67,3 @@ list = sorted(dic.items(), key=operator.itemgetter(1), reverse=True)
 print(list)  # 输出[('a', 5),('c':4),('b', 3)]
 # 其中key作用是取出key-value元组中下标为1的元素,即取出了dic里的value,改为0可按key排序
 # 排序后reverse,按从大到小排序
-

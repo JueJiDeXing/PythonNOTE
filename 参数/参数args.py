@@ -2,9 +2,14 @@ def fun1(a, *args):
     print(args)  # fun1(1,2,3),输出(2,3)元组类型
 
 
+fun1(1, 2, 3)  # a=1,args=(2,3)
+
+
 def fun2(a, **kwargs):
     print(kwargs)  # fun2(1,z=2,k3='www'),输出{'z': 2, 'k3': 'www'}字典类型
 
+
+fun2(1, z=2, k3='www')  # a=1,kwargs={'z': 2, 'k3': 'www'}
 
 """ *args不定参 与 解包
 *args无名的多个不定参数,可以不传,是元组类型(可迭代)
