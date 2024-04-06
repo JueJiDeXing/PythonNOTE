@@ -15,23 +15,18 @@ print(a, b, id(a), id(b))  # 1000030 1000029 2730753710832 2730751343472
 
 
 class AAA:
-    name = None
     value = None
 
-    def __init__(self):
-        pass
+    def __init__(self, value):
+        self.value = value
 
     def __eq__(self, other):
-        return True
-
-    def __hash__(self):
-        return 10
+        return self.value == other.value
 
 
-print("-----------1--------------------")
-c = AAA()
-d = AAA()
-print(hash(c), hash(d))
+print("--------------------------------")
+c = AAA(1)
+d = AAA(1)
 print(c == d, c is d)  # True False
 
 f = [1]

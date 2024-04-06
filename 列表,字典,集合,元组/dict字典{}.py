@@ -5,8 +5,12 @@ key关键词、value值
 # 创建字典#################################################################
 dic = {"name": "绝迹的星", "age": 20}  # {key:value}
 # 空字典
-d = {}
-d = dict({"name": "绝迹的星", "age": 20})
+d1 = {}
+d2 = dict({"name": "绝迹的星", "age": 20})
+
+from collections import defaultdict
+
+d3 = defaultdict(int)  # 默认值为0
 # -----------------------------------------------------------------------
 # 获取字典元素
 print(dic["name"])  # 如果name不存在会报错KeyError

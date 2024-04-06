@@ -5,6 +5,7 @@ def fun1(a, *args):
 fun1(1, 2, 3)  # a=1,args=(2,3)
 
 
+
 def fun2(a, **kwargs):
     print(kwargs)  # fun2(1,z=2,k3='www'),输出{'z': 2, 'k3': 'www'}字典类型
 
